@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Final!</title>
+
+
+		<!-- CSS -->
+        <link rel="stylesheet" href="assets/css/main_um_ano.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome-animation.min.css" >
+
+	</head>
+	<body class="loading">
+		<!-- Música de Fundo -->
+		<audio id="musica">
+			<source src="assets/audio/3x4.mp3"  type="audio/mpeg">
+			Your browser does not support the audio tag.
+		</audio>
+
+		<script>
+			function playAudio(){
+			var x = document.getElementById("musica"); 
+            x.play();
+			}
+		</script>
+		
+		<div class="wrap">
+			<button onclick="playAudio()" class="button">Tocar Musiquinha</button>
+		  </div>
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+                <!-- Header -->
+				<header id="header">
+				    <h1>Fim!</h1>
+						<p>"Feitos um pro outro, feitos pra durar, uma luz que não produz sombra"</p>
+				    	<p>"Que os deuses do amor estejam a nos proteger e que o verão no nosso sorriso nunca acabe"</p>
+				    <nav>
+				
+				</header>
+				<!-- Footer -->
+				<footer id="footer">
+					<a href="index.html" <p>Yslane A. &ensp;<span class="icon fa-heart">&ensp; Reinan C. </p></a>
+				</footer>
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Parabéns Princesa!</title>
+        <link rel="shortcut icon" href="assets/css/images/favicon.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- CSS -->
+        <link rel="stylesheet" href="assets/css/main_final.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome-animation.min.css" >
+
+	</head>
+	<body class="loading">
+		<!-- Música de Fundo -->
+		<audio id="musica">
+			<source src="assets/audio/PraVoceGuardeiAmor.mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+		</audio>
+
+		<script>
+			function playAudio(){
+			var x = document.getElementById("musica"); 
+            x.play();
+			}
+		</script>
+		
+		<div class="wrap">
+			<button onclick="playAudio()" class="button">Tocar Musiquinha</button>
+		  </div>
+  
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+               
+				<!-- Header -->
+				<header id="header">
+				    <h1>Parabéns Princesa!</h1>
+				    	<p>"O que eu desejo a você é que os deuses do amor estejam a te proteger e que o verão no seu sorriso nunca acabe"</p>
+							<p>Obrigado pelo "brilho desse olhar que me acalma me traz força pra encarar tudo"</p>
+							<p>"Te amo, meu Sol!"</p>
+				    <nav>
+				    <nav>
+				        <ul>
+									<li><a class="icon fa-heart faa-pulse animated" href="inicial.html"><span class="label">heart</span></a></li>
+                </ul>
+				    </nav>
+				</header>
+				<!-- Footer -->
+				<footer id="footer">
+					<a <p>Yslane A. &ensp;<span class="icon fa-heart">&ensp; Reinan C. </p></a> 
+
+
+				</footer>
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
